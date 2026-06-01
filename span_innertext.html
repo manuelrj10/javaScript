@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate(){
+	var msg;
+	var len=document.myform.mytextbox.value.length;
+	if(len>6){
+		msg="password is strong"
+	}
+	else{
+		msg="password is weak"
+	}
+	document.getElementById('printhere').innerText=msg;
+}
+</script>
+</head>
+<body>
+<form name="myform">
+password<input type="password" name="mytextbox" value="" onkeyup="validate()">
+<span id="printhere"></span>
+
+
+
+</form>
+
+</body>
+</html>

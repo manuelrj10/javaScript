@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm(){
+	if(document.myform.name.value=="")
+		{
+		alert("enter the name");
+		document.myform.name.focus();
+		return false;
+		}
+	if(document.myform.quantity.value=="")
+	{
+	alert("enter the quantity");
+	document.myform.quantity.focus();
+	return false;
+	}
+	if(isNaN(document.myform.quantity.value))
+	{
+	alert("enter the valid quantity");
+	document.myform.quantity.focus();
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+<form name="myform" method="post" action="#">
+item Name :<input type="text" name="name" value=""  />
+item Quantity :<input type="text" name="quantity" value="" />
+<input type="submit" value="submit" onClick="return validateForm();" />
+
+
+
+
+
+</form>
+
+</body>
+</html>
