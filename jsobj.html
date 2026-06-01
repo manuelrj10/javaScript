@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+    //object decalartion 1
+    employee={
+        age:25,
+        name:"manuel",
+        salary:90000
+    };
+    console.log(employee.age+" "+employee.name+" "+employee.salary);
+
+
+    // new object creation
+    var emp=new Object();
+        emp.age=25,
+       emp.name="david",
+       emp.salary=90000
+    console.log(emp.age+" "+emp.name+" "+emp.salary);
+
+    //3 object using constructor
+    function student(id,name,salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }
+    t=new student(1,"sharan",50000);
+    document.write(t.id+" "+t.name+" "+t.salary);
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
